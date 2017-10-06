@@ -14,11 +14,13 @@ Make a histogram of the total number of steps taken each day
 
 ```r
 ds <- aggregate(steps~date,data=act,sum,na.rm=TRUE)
+```
 
+```r
 with(ds,hist(steps))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
 Calculate and report the mean and median total number of steps taken per day
 
 ```r

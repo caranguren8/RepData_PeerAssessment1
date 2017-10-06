@@ -17,7 +17,8 @@ act <- read.csv("activity.csv")
 Make a histogram of the total number of steps taken each day
 ```{r}
 ds <- aggregate(steps~date,data=act,sum,na.rm=TRUE)
-
+```
+```{r histogram, fig.height=4}
 with(ds,hist(steps))
 ```
 Calculate and report the mean and median total number of steps taken per day
