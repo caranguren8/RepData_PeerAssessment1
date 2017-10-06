@@ -17,7 +17,7 @@ ds <- aggregate(steps~date,data=act,sum,na.rm=TRUE)
 ```
 
 ```r
-with(ds,hist(steps))
+hist(ds$steps)
 ```
 
 ![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
